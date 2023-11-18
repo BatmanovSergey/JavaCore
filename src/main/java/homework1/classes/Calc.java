@@ -1,4 +1,4 @@
-package homework.classes;
+package homework1.classes;
 
 public class Calc {
     /**

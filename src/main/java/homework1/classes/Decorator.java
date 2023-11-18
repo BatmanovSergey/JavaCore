@@ -1,4 +1,4 @@
-package homework.classes;
+package homework1.classes;
 
 /**
  * Декоратор. Он декорирует, то есть, накладывает на результат декорации.

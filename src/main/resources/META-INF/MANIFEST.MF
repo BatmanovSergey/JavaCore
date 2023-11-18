@@ -1,3 +1,3 @@
 Manifest-Version: 1.0
-Main-Class: homework.main.Main
+Main-Class: homework1.main.Main
 

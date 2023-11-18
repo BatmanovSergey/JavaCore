@@ -1,7 +1,7 @@
-package homework.main;
+package homework1.main;
 
-import homework.classes.Calc;
-import homework.classes.Decorator;
+import homework1.classes.Calc;
+import homework1.classes.Decorator;
 
 public class Main {
     public static void main(String[] args) {
