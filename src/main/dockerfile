@@ -1,0 +1,5 @@
+FROM bellsoft/liberica-openjdk-alpine:latest
+COPY ./java ./src
+RUN mkdir ./out
+RUN javac -encoding utf8 -sourcepath ./src -d out src/homework1/main/Main.java
+CMD java -classpath ./out homework1.main.Main
