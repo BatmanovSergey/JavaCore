@@ -1,4 +1,5 @@
 /*
+<<<<<<< HEAD
  * Copyright (c) 2013, 2022, Oracle and/or its affiliates. All rights reserved.
  * ORACLE PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
  *
@@ -21,6 +22,30 @@
  *
  *
  *
+=======
+ * Copyright (c) 2013, 2020, Oracle and/or its affiliates. All rights reserved.
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ *
+ * This code is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU General Public License version 2 only, as
+ * published by the Free Software Foundation.  Oracle designates this
+ * particular file as subject to the "Classpath" exception as provided
+ * by Oracle in the LICENSE file that accompanied this code.
+ *
+ * This code is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+ * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
+ * version 2 for more details (a copy is included in the LICENSE file that
+ * accompanied this code).
+ *
+ * You should have received a copy of the GNU General Public License version
+ * 2 along with this work; if not, write to the Free Software Foundation,
+ * Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
+ *
+ * Please contact Oracle, 500 Oracle Parkway, Redwood Shores, CA 94065 USA
+ * or visit www.oracle.com if you need additional information or have any
+ * questions.
+>>>>>>> 9b2ddf724a6e8066747b2801c0e15a0f292abfa2
  */
 
 var moduleSearchIndex;
@@ -28,6 +53,7 @@ var packageSearchIndex;
 var typeSearchIndex;
 var memberSearchIndex;
 var tagSearchIndex;
+<<<<<<< HEAD
 
 var oddRowColor = "odd-row-color";
 var evenRowColor = "even-row-color";
@@ -36,6 +62,8 @@ var sortDesc = "sort-desc";
 var tableTab = "table-tab";
 var activeTableTab = "active-table-tab";
 
+=======
+>>>>>>> 9b2ddf724a6e8066747b2801c0e15a0f292abfa2
 function loadScripts(doc, tag) {
     createElem(doc, tag, 'search.js');
 
@@ -53,6 +81,7 @@ function createElem(doc, tag, path) {
     scriptElement.parentNode.insertBefore(script, scriptElement);
 }
 
+<<<<<<< HEAD
 // Helper for  making content containing release names comparable lexicographically
 function makeComparable(s) {
     return s.toLowerCase().replace(/(\d+)/g,
@@ -138,6 +167,8 @@ function toggleGlobal(checkbox, selected, columns) {
 }
 
 // Shows the elements of a table belonging to a specific category
+=======
+>>>>>>> 9b2ddf724a6e8066747b2801c0e15a0f292abfa2
 function show(tableId, selected, columns) {
     if (tableId !== selected) {
         document.querySelectorAll('div.' + tableId + ':not(.' + selected + ')')
@@ -149,7 +180,12 @@ function show(tableId, selected, columns) {
         .forEach(function(elem, index) {
             elem.style.display = '';
             var isEvenRow = index % (columns * 2) < columns;
+<<<<<<< HEAD
             toggleStyle(elem.classList, isEvenRow, evenRowColor, oddRowColor);
+=======
+            elem.classList.remove(isEvenRow ? oddRowColor : evenRowColor);
+            elem.classList.add(isEvenRow ? evenRowColor : oddRowColor);
+>>>>>>> 9b2ddf724a6e8066747b2801c0e15a0f292abfa2
         });
     updateTabs(tableId, selected);
 }
@@ -197,6 +233,7 @@ function indexFilesLoaded() {
         && memberSearchIndex
         && tagSearchIndex;
 }
+<<<<<<< HEAD
 // Copy the contents of the local snippet to the clipboard
 function copySnippet(button) {
     copyToClipboard(button.nextElementSibling.innerText);
@@ -240,6 +277,9 @@ function switchCopyLabel(span, parent) {
         };
     }
 }
+=======
+
+>>>>>>> 9b2ddf724a6e8066747b2801c0e15a0f292abfa2
 // Workaround for scroll position not being included in browser history (8249133)
 document.addEventListener("DOMContentLoaded", function(e) {
     var contentDiv = document.querySelector("div.flex-content");
@@ -251,6 +291,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
     window.addEventListener("hashchange", function(e) {
         history.replaceState(contentDiv.scrollTop, document.title);
     });
+<<<<<<< HEAD
     var timeoutId;
     contentDiv.addEventListener("scroll", function(e) {
         if (timeoutId) {
@@ -259,6 +300,16 @@ document.addEventListener("DOMContentLoaded", function(e) {
         timeoutId = setTimeout(function() {
             history.replaceState(contentDiv.scrollTop, document.title);
         }, 100);
+=======
+    contentDiv.addEventListener("scroll", function(e) {
+        var timeoutID;
+        if (!timeoutID) {
+            timeoutID = setTimeout(function() {
+                history.replaceState(contentDiv.scrollTop, document.title);
+                timeoutID = null;
+            }, 100);
+        }
+>>>>>>> 9b2ddf724a6e8066747b2801c0e15a0f292abfa2
     });
     if (!location.hash) {
         history.replaceState(contentDiv.scrollTop, document.title);

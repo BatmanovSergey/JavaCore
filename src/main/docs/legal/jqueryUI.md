@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ## jQuery UI v1.13.1
+=======
+## jQuery UI v1.13.2
+>>>>>>> 9b2ddf724a6e8066747b2801c0e15a0f292abfa2
 
 ### jQuery UI License
 ```

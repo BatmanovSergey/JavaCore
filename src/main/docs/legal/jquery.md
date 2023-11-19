@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 ## jQuery v3.6.0
 
 ### jQuery License
 ```
 jQuery v 3.6.0
+=======
+## jQuery v3.6.1
+
+### jQuery License
+```
+jQuery v 3.6.1
+>>>>>>> 9b2ddf724a6e8066747b2801c0e15a0f292abfa2
 Copyright OpenJS Foundation and other contributors, https://openjsf.org/
 
 Permission is hereby granted, free of charge, to any person obtaining
@@ -26,7 +34,11 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ******************************************
 
+<<<<<<< HEAD
 The jQuery JavaScript Library v3.6.0 also includes Sizzle.js
+=======
+The jQuery JavaScript Library v3.6.1 also includes Sizzle.js
+>>>>>>> 9b2ddf724a6e8066747b2801c0e15a0f292abfa2
 
 Sizzle.js includes the following license:
 
