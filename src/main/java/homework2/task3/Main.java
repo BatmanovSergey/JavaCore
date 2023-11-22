@@ -3,6 +3,12 @@ package homework2.task3;
 import java.util.Random;
 import java.util.Scanner;
 
+/* *
+ * Крестики-нолики поле 5х5 с проверкой на победу из 4-х одинаковых фишек (из task2) с
+ * искусственным интеллектом, который проверяет наличие трёх одинаковых фишек у человека и
+ * блокирует победный ход человека
+ */
+
 public class Main {
     // Задаём константы
     private static final char DOT_HUMAN = 'X'; // фишка игрока

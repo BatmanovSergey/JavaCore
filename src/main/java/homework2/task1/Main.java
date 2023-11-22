@@ -3,6 +3,11 @@ package homework2.task1;
 import java.util.Random;
 import java.util.Scanner;
 
+/**
+ * Крестики-нолики поле 3х3 с простой проверкой на победу (код с семинара)
+ */
+
+
 public class Main {
     // Задаём константы
     private static final char DOT_HUMAN = 'X'; // фишка игрока

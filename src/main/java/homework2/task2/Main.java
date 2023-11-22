@@ -3,6 +3,11 @@ package homework2.task2;
 import java.util.Random;
 import java.util.Scanner;
 
+
+/**
+* Крестики-нолики поле 5х5 с проверкой на победу из 4-х одинаковых фишек
+*/
+
 public class Main {
     // Задаём константы
     private static final char DOT_HUMAN = 'X'; // фишка игрока
